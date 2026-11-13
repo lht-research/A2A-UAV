@@ -11,7 +11,7 @@ A multimodal air-to-air dataset for UAV detection and identification. The releas
 Download the preview package (`A2A-UAV_preview.tar.gz`) from either mirror.
 
 - [Google Drive](https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view?usp=sharing)
-- [Baidu Netdisk](https://pan.baidu.com/s/1c7TXhvHKnL0h4Wx4UmDwog?pwd=A2AD) (extraction code `A2AD`)
+- [Baidu Netdisk](https://pan.baidu.com/s/1_P6F3z18gCyuDagdedcM2Q?pwd=A2AD) (extraction code `A2AD`)
 
 The full dataset will be made publicly available after the paper is accepted.
 

@@ -9,7 +9,7 @@ A2A-UAV 是面向空对空无人机检测和识别的多模态数据集。发布
 预览包 `A2A-UAV_preview.tar.gz` 可通过以下任一入口下载。
 
 - [Google Drive](https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view?usp=sharing)
-- [百度网盘](https://pan.baidu.com/s/1c7TXhvHKnL0h4Wx4UmDwog?pwd=A2AD)（提取码 `A2AD`）
+- [百度网盘](https://pan.baidu.com/s/1_P6F3z18gCyuDagdedcM2Q?pwd=A2AD)（提取码 `A2AD`）
 
 完整数据集将在论文录用后公开。
 
