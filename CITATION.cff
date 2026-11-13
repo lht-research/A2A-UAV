@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite the A2A-UAV dataset.
+title: 'A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification'
+type: dataset
+authors:
+- name: A2A-UAV contributors
+license: CC-BY-4.0
+abstract: A2A-UAV contains processed RGB, panoramic, thermal, RF spectrogram
+  and radar products organized by retained sample and canonical recording assignments.

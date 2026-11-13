@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+benchmark_inputs/
+rf_cache/
+runs/
+work_dirs/
+checkpoints/
+*.pth
+*.pt
+*.bag
+*.wav
+*.tar.gz
