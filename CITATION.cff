@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: If you use this dataset, please cite the A2A-UAV dataset.
+message: If you use A2A-UAV, please cite the paper listed in preferred-citation.
 title: 'A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification'
 type: dataset
 authors:
@@ -7,3 +7,32 @@ authors:
 license: CC-BY-4.0
 abstract: A2A-UAV contains processed RGB, panoramic, thermal, RF spectrogram
   and radar products organized by retained sample and canonical recording assignments.
+url: https://github.com/lht-research/A2A-UAV
+preferred-citation:
+  type: article
+  title: 'A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification'
+  authors:
+  - family-names: Liang
+    given-names: Hongtao
+  - family-names: Wan
+    given-names: Yiyao
+  - family-names: Zhu
+    given-names: Kezhi
+  - family-names: Zhang
+    given-names: Jiayi
+  - family-names: Jiang
+    given-names: Zequn
+  - family-names: Zhou
+    given-names: Ziyu
+  - family-names: Ji
+    given-names: Jiahuan
+  - family-names: Zhou
+    given-names: Fuhui
+  - family-names: Wu
+    given-names: Qihui
+  journal: arXiv
+  year: 2026
+  url: https://arxiv.org/abs/2611.21311
+  identifiers:
+  - type: other
+    value: 'arXiv:2611.21311'

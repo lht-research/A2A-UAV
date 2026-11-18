@@ -1,10 +1,60 @@
-# A2A-UAV
+<h1 align="center">A2A-UAV</h1>
 
-[中文](README_zh.md) · [Dataset card](docs/DATASET_CARD.md)
+<h3 align="center">A Multimodal Air-to-Air Dataset<br>for UAV Detection and Identification</h3>
 
-A multimodal air-to-air dataset for UAV detection and identification. The release contains RGB, panoramic, thermal infrared and RF time–frequency images, radar frames where available, and sample metadata.
+<p align="center">
+  RGB &nbsp;·&nbsp; Panorama &nbsp;·&nbsp; Thermal infrared &nbsp;·&nbsp; RF spectrograms &nbsp;·&nbsp; Millimeter-wave radar
+</p>
 
-![A2A-UAV examples](assets/a2a_uav_fig1.jpg)
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.21311"><img src="https://img.shields.io/badge/arXiv-2611.21311-b31b1b?style=flat-square" alt="Read the paper on arXiv"></a>
+  <a href="#data-availability"><img src="https://img.shields.io/badge/Preview-200_samples-0284c7?style=flat-square" alt="Preview with 200 samples"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-CC_BY_4.0-0d9488?style=flat-square" alt="Dataset license CC BY 4.0"></a>
+  <a href="dataset_tools/read_modality.py"><img src="https://img.shields.io/badge/Readers-5_modalities-7c3aed?style=flat-square" alt="Readers for five modalities"></a>
+</p>
+
+<p align="center">
+  <strong>English</strong> &nbsp;·&nbsp; <a href="README_zh.md">简体中文</a>
+  &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2611.21311">Paper</a>
+  &nbsp;|&nbsp; <a href="docs/DATASET_CARD.md">Dataset card</a>
+  &nbsp;|&nbsp; <a href="#citation-and-license">Citation</a>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%"><h3>105,294</h3>Multimodal samples</td>
+    <td align="center" width="25%"><h3>15</h3>UAV labels</td>
+    <td align="center" width="25%"><h3>109</h3>Recording groups</td>
+    <td align="center" width="25%"><h3>3</h3>Scenes · day &amp; night</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/a2a_uav_fig1.jpg" width="100%" alt="Five sensing modalities across playground, park and garden scenes in daylight and at night">
+</p>
+
+<table align="center">
+  <tr>
+    <td width="33%" valign="top">
+      <h3><a href="#data-availability">Download preview ↗</a></h3>
+      Explore 200 samples from the dataset.<br><br>
+      <a href="https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view?usp=sharing">Google Drive</a> &nbsp;·&nbsp;
+      <a href="https://pan.baidu.com/s/1_P6F3z18gCyuDagdedcM2Q?pwd=A2AD">Baidu Netdisk</a>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="#read-the-five-modalities">Read the data →</a></h3>
+      One reader for five modalities.<br><br>
+      <a href="#read-the-five-modalities">Python examples</a> &nbsp;·&nbsp;
+      <a href="docs/DATASET_CARD.md">Data formats</a>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="#detection">Run the benchmarks →</a></h3>
+      Detection and RF identification.<br><br>
+      <a href="#detection">Detection</a> &nbsp;·&nbsp;
+      <a href="#rf-identification">RF identification</a>
+    </td>
+  </tr>
+</table>
 
 ## Data availability
 
@@ -118,4 +168,18 @@ The paper's benchmark metrics refer to archived experimental inputs and checkpoi
 
 ## Citation and license
 
-See [CITATION.cff](CITATION.cff) for citation metadata and [LICENSE.md](LICENSE.md) for the dataset license.
+If you use A2A-UAV in your research, please cite [our paper](https://arxiv.org/abs/2611.21311).
+
+```bibtex
+@misc{liang2026a2auavmultimodalairtoairdataset,
+  title={A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification},
+  author={Hongtao Liang and Yiyao Wan and Kezhi Zhu and Jiayi Zhang and Zequn Jiang and Ziyu Zhou and Jiahuan Ji and Fuhui Zhou and Qihui Wu},
+  year={2026},
+  eprint={2611.21311},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2611.21311},
+}
+```
+
+Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff). See [LICENSE.md](LICENSE.md) for the dataset license.

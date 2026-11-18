@@ -1,8 +1,60 @@
-# A2A-UAV
+<h1 align="center">A2A-UAV</h1>
 
-[English](README.md) · [数据卡](docs/DATASET_CARD.md)
+<h3 align="center">面向空对空无人机检测与识别的多模态数据集</h3>
 
-A2A-UAV 是面向空对空无人机检测和识别的多模态数据集。发布内容包括 RGB、全景、热红外、射频时频图、可用的雷达帧和样本元数据。
+<p align="center">
+  RGB &nbsp;·&nbsp; 全景图像 &nbsp;·&nbsp; 热红外图像 &nbsp;·&nbsp; 射频时频图 &nbsp;·&nbsp; 毫米波雷达
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.21311"><img src="https://img.shields.io/badge/arXiv-2611.21311-b31b1b?style=flat-square" alt="在 arXiv 阅读论文"></a>
+  <a href="#数据获取"><img src="https://img.shields.io/badge/Preview-200_samples-0284c7?style=flat-square" alt="200 样本预览包"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-CC_BY_4.0-0d9488?style=flat-square" alt="数据许可 CC BY 4.0"></a>
+  <a href="dataset_tools/read_modality.py"><img src="https://img.shields.io/badge/Readers-5_modalities-7c3aed?style=flat-square" alt="五种模态的读取脚本"></a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> &nbsp;·&nbsp; <strong>简体中文</strong>
+  &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2611.21311">论文</a>
+  &nbsp;|&nbsp; <a href="docs/DATASET_CARD.md">数据卡</a>
+  &nbsp;|&nbsp; <a href="#引用与许可">引用</a>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%"><h3>105,294</h3>多模态样本</td>
+    <td align="center" width="25%"><h3>15</h3>无人机标签</td>
+    <td align="center" width="25%"><h3>109</h3>采集记录组</td>
+    <td align="center" width="25%"><h3>3</h3>场景 · 昼夜覆盖</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/a2a_uav_fig1.jpg" width="100%" alt="操场、公园、花园昼夜场景中的 RGB、全景、热红外、射频和雷达数据示例">
+</p>
+
+<table align="center">
+  <tr>
+    <td width="33%" valign="top">
+      <h3><a href="#数据获取">下载预览包 ↗</a></h3>
+      浏览数据集中的 200 个样本。<br><br>
+      <a href="https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view?usp=sharing">Google Drive</a> &nbsp;·&nbsp;
+      <a href="https://pan.baidu.com/s/1_P6F3z18gCyuDagdedcM2Q?pwd=A2AD">百度网盘</a>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="#五种模态的读取">读取数据 →</a></h3>
+      一个入口读取五种模态。<br><br>
+      <a href="#五种模态的读取">Python 示例</a> &nbsp;·&nbsp;
+      <a href="docs/DATASET_CARD.md">数据格式</a>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="README.md#detection">运行基线 →</a></h3>
+      无人机检测与射频识别。<br><br>
+      <a href="README.md#detection">检测实验</a> &nbsp;·&nbsp;
+      <a href="README.md#rf-identification">射频识别</a>
+    </td>
+  </tr>
+</table>
 
 ## 数据获取
 
@@ -60,4 +112,20 @@ XYZ 保留雷达传感器坐标，单位为米。经核对的源记录使用 `ti
 - [标注转换、全景切片与检测评估](README.md#detection)
 - [RF 索引、输入准备与识别实验](README.md#rf-identification)
 
-引用和许可见 [CITATION.cff](CITATION.cff) 和 [LICENSE.md](LICENSE.md)。
+## 引用与许可
+
+如果您在研究中使用 A2A-UAV，请引用[数据集论文](https://arxiv.org/abs/2611.21311)。
+
+```bibtex
+@misc{liang2026a2auavmultimodalairtoairdataset,
+  title={A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification},
+  author={Hongtao Liang and Yiyao Wan and Kezhi Zhu and Jiayi Zhang and Zequn Jiang and Ziyu Zhou and Jiahuan Ji and Fuhui Zhou and Qihui Wu},
+  year={2026},
+  eprint={2611.21311},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2611.21311},
+}
+```
+
+引用元数据见 [CITATION.cff](CITATION.cff)，数据集许可见 [LICENSE.md](LICENSE.md)。
