@@ -20,15 +20,6 @@
   &nbsp;|&nbsp; <a href="#citation-and-license">Citation</a>
 </p>
 
-<table align="center">
-  <tr>
-    <td align="center" width="25%"><h3>105,294</h3>Multimodal samples</td>
-    <td align="center" width="25%"><h3>15</h3>UAV labels</td>
-    <td align="center" width="25%"><h3>109</h3>Recording groups</td>
-    <td align="center" width="25%"><h3>3</h3>Scenes · day &amp; night</td>
-  </tr>
-</table>
-
 <p align="center">
   <img src="assets/a2a_uav_fig1.jpg" width="100%" alt="Five sensing modalities across playground, park and garden scenes in daylight and at night">
 </p>

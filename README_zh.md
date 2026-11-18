@@ -20,15 +20,6 @@
   &nbsp;|&nbsp; <a href="#引用与许可">引用</a>
 </p>
 
-<table align="center">
-  <tr>
-    <td align="center" width="25%"><h3>105,294</h3>多模态样本</td>
-    <td align="center" width="25%"><h3>15</h3>无人机标签</td>
-    <td align="center" width="25%"><h3>109</h3>采集记录组</td>
-    <td align="center" width="25%"><h3>3</h3>场景 · 昼夜覆盖</td>
-  </tr>
-</table>
-
 <p align="center">
   <img src="assets/a2a_uav_fig1.jpg" width="100%" alt="操场、公园、花园昼夜场景中的 RGB、全景、热红外、射频和雷达数据示例">
 </p>
