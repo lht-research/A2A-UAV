@@ -256,7 +256,7 @@ python detection/panorama/merge_predictions.py \
 
 ### RF identification
 
-Table VIII was computed on the experimental index recorded in `rf_identification/recorded_settings.json`. The commands below train and evaluate the same protocol on the released splits.
+The commands below train and evaluate RF identification models on the released splits.
 
 Build the RF index from the released classification index and checksum inventory. Identical spectrograms share a sampling group.
 

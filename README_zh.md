@@ -256,7 +256,7 @@ python detection/panorama/merge_predictions.py \
 
 ### 射频识别
 
-论文 Table VIII 使用的实验索引记录在 `rf_identification/recorded_settings.json`。以下命令在发布版划分上训练并评估相同协议。
+以下命令在发布版划分上训练并评估射频识别模型。
 
 从发布版分类索引和校验清单生成 RF 索引。内容相同的时频图共享同一个抽样组。
 
