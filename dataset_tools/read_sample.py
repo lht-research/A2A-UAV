@@ -5,8 +5,10 @@ from pathlib import Path
 
 
 def load_manifest_sample(root, split, sample_id, sample_dir):
-    """Read the index used by previews whose archive has no per-sample metadata."""
+    """Read an extracted sample index or the repository's preview index."""
     path = root / "manifests" / f"full_{split}.jsonl"
+    if not path.is_file():
+        path = Path(__file__).resolve().parent / "preview_manifests" / f"full_{split}.jsonl"
     sample_rel = sample_dir.relative_to(root)
     filenames = {
         "rgb": "rgb.png",
@@ -27,6 +29,14 @@ def load_manifest_sample(root, split, sample_id, sample_dir):
                 "sample_id": sample_id,
                 "split": split,
                 "classification_label": row["classification_label"],
+                "recording_key": row["recording_key"],
+                "canonical_recording_key": row["canonical_recording_key"],
+                "family_key": row["family_key"],
+                "session": row["session"],
+                "scene": row["scene"],
+                "condition": row["condition"],
+                "timestamp": row["timestamp"],
+                "spectrum_readable": row["spectrum_readable"],
                 "modalities": {
                     name: str(Path(row["files"][filename]).relative_to(sample_rel))
                     for name, filename in filenames.items()

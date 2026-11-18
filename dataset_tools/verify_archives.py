@@ -34,7 +34,7 @@ def read_checksums(path: Path) -> list[tuple[str, str]]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("archive_dir", type=Path, help="Directory containing downloaded archives")
-    parser.add_argument("sha256s", type=Path, help="Checksum file, e.g. metadata/archive_sha256s.txt")
+    parser.add_argument("sha256s", type=Path, help="Checksum file, e.g. checksums/archives.sha256")
     args = parser.parse_args()
 
     entries = read_checksums(args.sha256s)

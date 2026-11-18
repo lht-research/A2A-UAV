@@ -92,7 +92,7 @@ def load_index(index, cohort):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--cohort", choices=("paper", "downloaded"), default="paper")
+    ap.add_argument("--cohort", choices=("paper", "downloaded"), default="downloaded")
     ap.add_argument("--index", required=True); ap.add_argument("--cache-root", required=True); ap.add_argument("--output-dir", required=True)
     ap.add_argument("--method", choices=METHODS, required=True); ap.add_argument("--epochs", type=int, default=0, help="0 trains until the validation stopping criterion; positive values are explicit limits")
     ap.add_argument("--freeze-epochs", type=int, default=1); ap.add_argument("--batch-size", type=int, default=6)

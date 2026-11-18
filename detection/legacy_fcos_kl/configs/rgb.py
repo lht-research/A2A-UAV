@@ -46,7 +46,7 @@ data = dict(
     train=dict(
         type='CocoDataset',
         ann_file=
-        (_benchmark_root + '/rgb/data/coco/annotations/instances_train_full.json'),
+        (_benchmark_root + '/rgb/data/coco/annotations/instances_train_rgb_single.json'),
         img_prefix='',
         classes=('uav', ),
         pipeline=[
@@ -66,7 +66,7 @@ data = dict(
     val=dict(
         type='CocoDataset',
         ann_file=
-        (_benchmark_root + '/rgb/data/coco/annotations/instances_val_benchmark.json'),
+        (_benchmark_root + '/rgb/data/coco/annotations/instances_val_rgb_single.json'),
         img_prefix='',
         classes=('uav', ),
         pipeline=[

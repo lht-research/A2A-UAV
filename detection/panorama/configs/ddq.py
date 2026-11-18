@@ -427,7 +427,6 @@ train_pipeline = [
     dict(type='PackDetInputs'),
 ]
 train_precision = 'fp32'
-val_benchmark_ann_file = (_benchmark_root + '/panorama/data/coco_tiles/annotations/instances_val_tiles_benchmark.json')
 val_cfg = dict(type='ValLoop')
 val_dataloader = dict(
     batch_size=4,

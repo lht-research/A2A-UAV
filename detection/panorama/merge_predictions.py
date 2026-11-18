@@ -21,7 +21,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment-root", type=Path, required=True)
     parser.add_argument("--run-name", required=True)
-    parser.add_argument("--split", choices=["val_benchmark", "val_full", "test_full"], required=True)
+    parser.add_argument("--split", choices=["val_full", "test_full"], required=True)
     parser.add_argument("--results-jsonl", type=Path, default=None)
     parser.add_argument("--outfile-prefix", type=Path, default=None)
     parser.add_argument("--checkpoint", type=Path, default=None)
@@ -56,10 +56,7 @@ def config_path_or_default(cfg: Config, key: str, default: Path) -> Path:
 
 
 def split_ann_files(experiment_root: Path, cfg: Config, split: str) -> tuple[Path, Path]:
-    if split == "val_benchmark":
-        tile_ann = experiment_root / "data" / "coco_tiles" / "annotations" / "instances_val_tiles_benchmark.json"
-        gt_ann = experiment_root / "data" / "panorama_coco" / "annotations" / "instances_val_benchmark_panorama_single.json"
-    elif split == "val_full":
+    if split == "val_full":
         tile_ann = config_path_or_default(
             cfg,
             "val_full_ann_file",

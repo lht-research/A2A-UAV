@@ -15,7 +15,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment-root", type=Path, required=True)
     parser.add_argument("--run-name", required=True)
-    parser.add_argument("--split", choices=["val_benchmark", "val_full", "test_full"], required=True)
+    parser.add_argument("--split", choices=["val_full", "test_full"], required=True)
     parser.add_argument("--checkpoint", type=Path, default=None)
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--num-workers", type=int, default=6)
@@ -115,10 +115,7 @@ def main() -> None:
     if args.checkpoint is None:
         args.checkpoint = resolve_best_checkpoint(run_dir)
 
-    if args.split == "val_benchmark":
-        ann_file = experiment_root / "data" / "coco_tiles" / "annotations" / "instances_val_tiles_benchmark.json"
-        gt_ann_file = experiment_root / "data" / "panorama_coco" / "annotations" / "instances_val_benchmark_panorama_single.json"
-    elif args.split == "val_full":
+    if args.split == "val_full":
         ann_file = Path(cfg.val_full_ann_file)
         gt_ann_file = experiment_root / "data" / "panorama_coco" / "annotations" / "instances_val_panorama_single.json"
     else:
