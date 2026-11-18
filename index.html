@@ -385,7 +385,21 @@ radar    = read_radar(sample_dir, meta)</pre>
   var st={scene:'playground',cond:'day'},pano=document.getElementById('pano');
   var imgs={rgb:['mRgb','jpg'],thermal:['mTh','jpg'],rf:['mRf','jpg'],radar:['mRd','png']};
   function base(){return 'assets/explorer/'+st.scene+'_'+st.cond+'_';}
-  function load(s,el,apply){el.classList.add('fade');var im=new Image();im.onload=function(){apply(s);el.classList.remove('fade');};im.src=s;}
+  var pendingImages=new WeakMap();
+  function load(s,el,apply){
+    var im=new Image();
+    pendingImages.set(el,im);
+    el.classList.add('fade');
+    im.onload=function(){
+      if(pendingImages.get(el)!==im)return;
+      apply(s);
+      el.classList.remove('fade');
+    };
+    im.onerror=function(){
+      if(pendingImages.get(el)===im)el.classList.remove('fade');
+    };
+    im.src=s;
+  }
   function update(){
     Object.keys(imgs).forEach(function(m){var el=document.getElementById(imgs[m][0]);load(base()+m+'.'+imgs[m][1],el,function(s){el.src=s;});});
     load(base()+'pano.jpg',pano,function(s){pano.style.backgroundImage='url('+s+')';});
